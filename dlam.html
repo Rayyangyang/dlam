@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		/*#dlam{
+			border:1px solid black;
+		}*/
+		#face circle{
+			fill:#0389de;
+			stroke:#000;
+		}
+		#face ellipse{
+			fill:#fff;
+			stroke:#000;
+		}
+		#face line{
+			stroke:#000;
+			stroke-width:10;
+			stroke-linecap: round;
+		}
+		#face #nose,circle{
+			fill:red;
+		}
+		#face #nose1,circle{
+			fill:#fff;
+			stroke:transparent;
+		}
+		#face #beard,line{
+			stroke:#434343;
+			stroke-width:2;
+		}
+		#face path{
+			fill:transparent;
+			stroke:#434343;
+			stroke-width:2;
+		}
+		#neck line:nth-of-type(1){
+			fill:transparent;
+			stroke: red;
+			stroke-width:15;
+			stroke-linecap:round;
+		}
+		#neck circle:nth-of-type(1){
+			fill:#feef00;
+			stroke:#000;
+		}
+		#neck circle:nth-of-type(2){
+			fill:#000;
+			stroke-width:0.3;
+		}
+		#body rect{
+			fill:#0389de;
+			stroke:#000;
+		}
+		#body path:nth-of-type(1){
+			fill:#fff;
+		}
+		#body path:nth-of-type(2){
+			fill:transparent;
+			stroke:#000;
+		}
+		#lefthand rect:nth-of-type(1){
+			fill:#0389de;
+			stroke:#000;
+		}
+		#lefthand circle{
+			stroke:#000;
+		}
+		#lefthand rect:nth-of-type(2){
+			fill:#0389de;
+		}
+		#righthand rect:nth-of-type(1){
+			fill:#0389de;
+			stroke:#000;
+		}
+		#righthand circle{
+			stroke:#000;
+		}
+		#righthand rect:nth-of-type(2){
+			fill:#0389de;
+		}
+		#lefthand line{
+			stroke:#000;
+			stroke-width:1;
+		}
+		#righthand line{
+			stroke:#000;
+			stroke-width:1;
+		}
+		#footer ellipse{
+			fill:#fff;
+			stroke:#000;
+		}
+		#footer path{
+			stroke:#000;
+			fill:#fff;
+		}
+	</style>
+</head>
+<body>
+	<svg id='dlam' width=800 height=500>
+
+		<svg id='face'>
+			<circle r=100 cx=400 cy=200></circle>
+			<ellipse rx=80 ry=60 cx=400 cy=225></ellipse>
+			<ellipse rx=30 ry=35 cx=368 cy=170></ellipse>
+			<ellipse rx=30 ry=35 cx=428 cy=170></ellipse>
+			<line x1=421 y1=178 x2=421 y2=185 ></line>
+			<line x1=375 y1=178 x2=375 y2=185 ></line>
+			<circle id='nose' r=10 cx=398 cy=200></circle>
+			<circle id='nose1' r=5 cx=401 cy=197></circle>
+			<line id='beard' x1=398 y1=210 x2=400 y2=270></line>
+			<line id='beard' x1=330 y1=210 x2=380 y2=220></line>
+			<line id='beard' x1=330 y1=230 x2=380 y2=230></line>
+			<line id='beard' x1=333 y1=250 x2=380 y2=240></line>
+			<line id='beard' x1=415 y1=240 x2=460 y2=245></line>
+			<line id='beard' x1=415 y1=230 x2=465 y2=230></line>
+			<line id='beard' x1=415 y1=220 x2=465 y2=210></line>
+			<path d="M 355 255 A 70 70 0 0 0 445 255"></path>
+		</svg>
+		<svg id="body">
+			<rect x=337 y=292 width=127 height=120></rect>
+			<path d="M 360 290 A 55 55 0 1 0 440 290"></path>
+			<path d="M 365 340 A 30 30 0 1 0 435 340 z"></path>
+		</svg>
+		<svg id="neck">
+			<line x1=345 y1=285 x2=455 y2=285></line>
+			<circle r=13 cx=400 cy=305></circle>
+			<circle r=6 cx=400 cy=313></circle>
+			<line x1=389 y1=298 x2=410 y2=298></line>
+			<line x1=387 y1=302 x2=412 y2=302></line>
+		</svg>
+		<svg id="lefthand">
+			<rect x=300 y=278 width="60" height="20" transform="rotate(30, 320 262)"></rect>
+			<circle r=18 cx= 300 cy=280></circle>
+			<rect x=335 y=294 width=13 height=19></rect>
+			<line x1=337 y1= 314 x2= 337 y2=302></line>
+		</svg>
+		<svg id="righthand">
+			<rect x=427 y= 280 width=60 height=20 transform="rotate(30,424 355)"></rect>
+			<circle r=18 cx= 504 cy=327></circle>
+			<rect x=453 y=293 width=15 height=20 rx=4 ry=4></rect>
+			<line x1=463 y1= 314 x2= 463 y2=302></line>
+		</svg>
+		<svg id="footer">
+			<path d="M 390 413 A 10 10 0 0 1 410 413"></path>
+			<ellipse rx=33 ry=15 cx=360 cy=410></ellipse>
+			<ellipse rx=33 ry=15 cx=440 cy=410></ellipse>
+		</svg>
+	</svg>
+</body>
+</html>
